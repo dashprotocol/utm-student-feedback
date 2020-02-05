@@ -72,7 +72,7 @@ class Feedback extends React.Component {
   }
 
   componentDidMount() {
-    fetch(new URL(`${window.location.origin}/entry`))
+    fetch(new URL('http://localhost:3001/'))
       .then((response) => response.json())
       .then((data) => {
         this.setState({
