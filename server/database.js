@@ -1,7 +1,7 @@
 /* eslint-disable func-names */
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/reviews', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://172.17.0.2/reviews', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const ReviewSchema = mongoose.Schema({
   content: String,
